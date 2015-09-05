@@ -17,13 +17,14 @@ public class question2 {
 			}
 			if ((keyChar >=48) && (keyChar <=57))
 			{
-				System.out.println("Radius=" + radius);
+				System.out.println("Radius=" + Character.toString ((char) radius));
 				System.out.println("Area  =" + Math.PI * (Math.pow(radius,2)));
 				System.out.println("------------------------------");				
 			}
 			else
 				System.out.println("Please type a proper number");
 		}
+		System.out.println("We are done");
 	}
 }
 
