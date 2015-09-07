@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Question5 {
 	public static void main (String[] args)
 	{
-		String userValue = null;
+		//String userValue = null;
 		int[] pointA;
 		int[] pointB;
 		int[] pointC;
@@ -13,6 +13,7 @@ public class Question5 {
 		System.out.println("");
 		System.out.print("Please select a point in the form of x,y\n");
 		System.out.print("Point A - X,Y Coord-> ");
+		@SuppressWarnings("resource")
 		Scanner point = new Scanner(System.in);
 		pointA = question.parse(point.nextLine());
 		
