@@ -1,0 +1,15 @@
+The purpose of this application is to read a file and display the output on the
+screen
+via file redirection
+to run the application use the following syntax
+java Question4 < {file}
+12
+434
+54
+34
+54123
+544
+332
+64
+2314
+

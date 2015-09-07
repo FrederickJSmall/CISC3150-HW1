@@ -1,0 +1,46 @@
+The purpose of this application is to see if the selected points create a valid
+triangle
+
+Please select a point in the form of x,y
+Point A - X,Y Coord-> 2,3
+PointX=2 ,PointY=3
+
+Please select a point in the form of x,y
+Point B - X,Y Coord-> 4,6
+PointX=4 ,PointY=6
+
+Please select a point in the form of x,y
+Point C - X,Y Coord-> 8,10
+PointX=8 ,PointY=10
+
+Distance of A to B=3.606
+Distance of B to C=5.657
+Distance of C to A=9.220
+
+This a valid triangle
+
+Done
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question5
+The purpose of this application is to see if the selected points create a valid
+triangle
+
+Please select a point in the form of x,y
+Point A - X,Y Coord-> 123,4
+PointX=123 ,PointY=4
+
+Please select a point in the form of x,y
+Point B - X,Y Coord-> 5,6
+PointX=5 ,PointY=6
+
+Please select a point in the form of x,y
+Point C - X,Y Coord-> 5,6
+PointX=5 ,PointY=6
+
+Distance of A to B=118.017
+Distance of B to C=0.000
+Distance of C to A=118.017
+This can not be a valid triangle. Sum of the first and second
+is not greated than the third side
+
+Done

@@ -1,6 +1,6 @@
 
 
-public class question1 {
+public class Question1 {
 	public static void main (String[] args)
 	{
 		System.out.println("I have read the academic integrity guidelines located at the following address and promise to adhere to the principles outline in the document");

@@ -1,11 +1,12 @@
 import java.util.Random;
 
-public class question3 {
+public class Question3 {
 	public static void main (String[] args)
 	{
 		Random randomMonth = new Random();
 		int month = randomMonth.nextInt(12) + 1;
 
+		System.out.println("Randomly picking a month out of the year; and the winner is");
         String monthInYear;
         switch (month) {
             case 1:  monthInYear = "January";

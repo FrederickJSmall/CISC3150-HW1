@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
-public class question2 {
+public class Question2 {
 	public static void main (String[] args)
 	{
 		// Math.PI
 		Scanner keyboard = new Scanner(System.in);
 		while(true)
 		{
-			System.out.println("Enter a radius");
+			System.out.println("The purpose of this application is to read a radius from a user");
+			System.out.println("and then display the area of the circle");
+			System.out.println("\nEnter a radius");
 			int radius = keyboard.next().charAt(0);
 			char keyChar = (char) radius;
 			if (keyChar==4)

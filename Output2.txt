@@ -1,0 +1,22 @@
+The purpose of this application is to read a radius from a user
+and then display the area of the circle
+
+Enter a radius
+4
+Radius=4
+Area  =8494.8665353068
+------------------------------
+The purpose of this application is to read a radius from a user
+and then display the area of the circle
+
+Enter a radius
+12
+Radius=1
+Area  =7542.9639612690935
+------------------------------
+The purpose of this application is to read a radius from a user
+and then display the area of the circle
+
+Enter a radius
+^D
+We are done

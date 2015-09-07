@@ -1,0 +1,18 @@
+Randomly picking a month out of the year; and the winner is
+September
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question3
+Randomly picking a month out of the year; and the winner is
+December
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question3
+Randomly picking a month out of the year; and the winner is
+March
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question3
+Randomly picking a month out of the year; and the winner is
+June
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question3
+Randomly picking a month out of the year; and the winner is
+February

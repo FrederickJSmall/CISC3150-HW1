@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class question5 {
+public class Question5 {
 	public static void main (String[] args)
 	{
 		String userValue = null;
@@ -8,17 +8,21 @@ public class question5 {
 		int[] pointB;
 		int[] pointC;
 		
-		question5 question = new question5();
-		
-		System.out.println("Point A - X,Y Coord");
+		Question5 question = new Question5();
+		System.out.println("The purpose of this application is to see if the selected points create a valid triangle");
+		System.out.println("");
+		System.out.print("Please select a point in the form of x,y\n");
+		System.out.print("Point A - X,Y Coord-> ");
 		Scanner point = new Scanner(System.in);
 		pointA = question.parse(point.nextLine());
 		
-		System.out.println("Point B - X,Y Coord");
+		System.out.print("Please select a point in the form of x,y\n");
+		System.out.print("Point B - X,Y Coord-> ");
 		//Scanner pointB = new Scanner(System.in);
 		pointB = question.parse(point.nextLine());
 		
-		System.out.println("Point C - X,Y Coord");
+		System.out.print("Please select a point in the form of x,y\n");
+		System.out.print("Point C - X,Y Coord-> ");
 		//Scanner pointC = new Scanner(System.in);
 		pointC = question.parse(point.nextLine());
 		
@@ -27,16 +31,21 @@ public class question5 {
 		double distanceBC = question.length(pointB,pointC);
 		double distanceCA = question.length(pointC,pointA);		
 		
-		System.out.println("Distance of A to B=" + distanceAB);
-		System.out.println("Distance of B to C=" + distanceBC); 
-		System.out.println("Distance of C to A=" + distanceCA); 		
+		System.out.format("Distance of A to B=%.3f%n" , distanceAB);
+		System.out.format("Distance of B to C=%.3f%n" , distanceBC); 
+		System.out.format("Distance of C to A=%.3f%n" , distanceCA); 		
 		
 		if(distanceAB + distanceBC > distanceCA)
+		{
+			System.out.println("");
 			System.out.println("This a valid triangle");
+		}
 		else
+		{
 			System.out.println("This can not be a valid triangle. Sum of the first and second ");
 			System.out.println("is not greated than the third side");
-		
+		}
+		System.out.println("");
 		System.out.println("Done");
 	}
 	public double length (int[] pointA,int[] pointB)
@@ -70,6 +79,7 @@ public class question5 {
 		}
 				
 		System.out.println("PointX=" + point[0] + " ,PointY=" + point[1]);
+		System.out.println("");
 		return point;
 	
 	}
