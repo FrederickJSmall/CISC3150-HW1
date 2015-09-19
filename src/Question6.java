@@ -15,13 +15,14 @@ public class Question6 {
 		//int[] circle1 = new int[]{4,2,3};
 		//int[] circle2 = new int[]{5,2,2};
 		
+		
 		//Circles overlap
-		int[] circle1 = new int[]{8,8,1};
-		int[] circle2 = new int[]{12,12,12};
+		//int[] circle1 = new int[]{8,8,1};
+		//int[] circle2 = new int[]{12,12,12};
 		
 
-		//int[] circle1;
-		//int[] circle2;
+		int[] circle1;
+		int[] circle2;
 
 		
 		//int[] pointC;
@@ -35,14 +36,14 @@ public class Question6 {
 		System.out.print("Circle 1 - X,Y,R Coord-> ");
 		@SuppressWarnings("resource")
 		Scanner point = new Scanner(System.in);
-		//circle1 = question.parse(point.nextLine());
+		circle1 = question.parse(point.nextLine());
 		System.out.printf("X=%s,Y=%s,R=%s\n",circle1[0],circle1[1],circle1[2]);
 
 		System.out.println("");
 		System.out.print("Please select a point and radius in the form of x,y,r\n");
 		System.out.print("Circle 2 - X,Y,R Coord-> ");
 		//Scanner pointB = new Scanner(System.in);
-		//circle2 = question.parse(point.nextLine());
+		circle2 = question.parse(point.nextLine());
 		System.out.printf("X=%s,Y=%s,R=%s\n",circle2[0],circle2[1],circle2[2]);
 		
 		question.circleTest(circle1,circle2);
@@ -72,7 +73,7 @@ public class Question6 {
 		//	System.out.println("is not greated than the third side");
 		//}
 		System.out.println("");
-		System.out.println("Done");
+		System.out.println("Done *************************");
 	}
 	public void circleTest (int[] circle1,int[] circle2)
 	{
@@ -138,7 +139,7 @@ public class Question6 {
 		{
 			point[0] = Integer.parseInt(pointArray[0].toString());
 			point[1] = Integer.parseInt(pointArray[1].toString());			
-			point[2] = Integer.parseInt(pointArray[1].toString());			
+			point[2] = Integer.parseInt(pointArray[2].toString());			
 		}
 		catch (Exception ex)
 		{
@@ -148,7 +149,7 @@ public class Question6 {
 			point[2] = 1;
 		}
 				
-		System.out.println("PointX=" + point[0] + " ,PointY=" + point[1] + " ,Radius=" + point[1]);
+		System.out.println("PointX=" + point[0] + " ,PointY=" + point[1] + " ,Radius=" + point[2]);
 		System.out.println("");
 		return point;
 	
