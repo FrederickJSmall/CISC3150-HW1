@@ -1,0 +1,91 @@
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>javac Question6.java
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question6
+The purpose of this application is to see if two circles touch,intersect,overlap
+ or one contains another
+
+Please select a point and radius in the form of x,y,r
+Circle 1 - X,Y,R Coord-> 8,8,1
+PointX=8 ,PointY=8 ,Radius=1
+
+X=8,Y=8,R=1
+
+Please select a point and radius in the form of x,y,r
+Circle 2 - X,Y,R Coord-> 8,8,12
+PointX=8 ,PointY=8 ,Radius=12
+
+X=8,Y=8,R=12
+
+Distance between points=0.0
+Combined Radius=11.0
+Once circle completely conatins another
+
+
+Done *************************
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question6
+The purpose of this application is to see if two circles touch,intersect,overlap
+ or one contains another
+
+Please select a point and radius in the form of x,y,r
+Circle 1 - X,Y,R Coord-> 8,8,1
+PointX=8 ,PointY=8 ,Radius=1
+
+X=8,Y=8,R=1
+
+Please select a point and radius in the form of x,y,r
+Circle 2 - X,Y,R Coord-> 12,12,1
+PointX=12 ,PointY=12 ,Radius=1
+
+X=12,Y=12,R=1
+
+Distance between points=5.656854249492381
+Combined Radius=0.0
+Circles do not intersect
+
+Done *************************
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question6
+The purpose of this application is to see if two circles touch,intersect,overlap
+ or one contains another
+
+Please select a point and radius in the form of x,y,r
+Circle 1 - X,Y,R Coord-> 4,2,3
+PointX=4 ,PointY=2 ,Radius=3
+
+X=4,Y=2,R=3
+
+Please select a point and radius in the form of x,y,r
+Circle 2 - X,Y,R Coord-> 5,2,2
+PointX=5 ,PointY=2 ,Radius=2
+
+X=5,Y=2,R=2
+
+Distance between points=1.0
+Combined Radius=1.0
+Circles touch each other
+
+
+Done *************************
+
+D:\Projects\GitHub\BrooklynCollege\CISC3150\HW1\src>java Question6
+The purpose of this application is to see if two circles touch,intersect,overlap
+ or one contains another
+
+Please select a point and radius in the form of x,y,r
+Circle 1 - X,Y,R Coord-> 8,8,1
+PointX=8 ,PointY=8 ,Radius=1
+
+X=8,Y=8,R=1
+
+Please select a point and radius in the form of x,y,r
+Circle 2 - X,Y,R Coord-> 12,12,12
+PointX=12 ,PointY=12 ,Radius=12
+
+X=12,Y=12,R=12
+
+Distance between points=5.656854249492381
+Combined Radius=11.0
+Circles overlap
+
+
+Done *************************
