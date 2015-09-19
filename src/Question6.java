@@ -19,6 +19,11 @@ public class Question6 {
 		int[] circle1 = new int[]{8,8,1};
 		int[] circle2 = new int[]{12,12,12};
 		
+
+		//int[] circle1;
+		//int[] circle2;
+
+		
 		//int[] pointC;
 		int radius1=0;
 		int radius2=0;
