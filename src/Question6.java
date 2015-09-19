@@ -3,26 +3,44 @@ import java.util.Scanner;
 public class Question6 {
 	public static void main (String[] args)
 	{
-		//String userValue = null;
-		int[] circle1;
-		int[] circle2;
+		//Circle contains another
+		//int[] circle1 = new int[]{8,8,1};
+		//int[] circle2 = new int[]{8,8,12};
+		
+		//Circle do not intersect
+		//int[] circle1 = new int[]{8,8,1};
+		//int[] circle2 = new int[]{12,12,1};
+	
+		//Circles touch
+		//int[] circle1 = new int[]{4,2,3};
+		//int[] circle2 = new int[]{5,2,2};
+		
+		//Circles overlap
+		int[] circle1 = new int[]{8,8,1};
+		int[] circle2 = new int[]{12,12,12};
+		
 		//int[] pointC;
 		int radius1=0;
 		int radius2=0;
 		
-		Question5 question = new Question5();
-		System.out.println("The purpose of this application is to see if the selected points create a valid triangle");
+		Question6 question = new Question6();
+		System.out.println("The purpose of this application is to see if two circles touch,intersect,overlap or one contains another");
 		System.out.println("");
 		System.out.print("Please select a point and radius in the form of x,y,r\n");
 		System.out.print("Circle 1 - X,Y,R Coord-> ");
 		@SuppressWarnings("resource")
 		Scanner point = new Scanner(System.in);
-		circle1 = question.parse(point.nextLine());
-		
+		//circle1 = question.parse(point.nextLine());
+		System.out.printf("X=%s,Y=%s,R=%s\n",circle1[0],circle1[1],circle1[2]);
+
+		System.out.println("");
 		System.out.print("Please select a point and radius in the form of x,y,r\n");
 		System.out.print("Circle 2 - X,Y,R Coord-> ");
 		//Scanner pointB = new Scanner(System.in);
-		circle2 = question.parse(point.nextLine());
+		//circle2 = question.parse(point.nextLine());
+		System.out.printf("X=%s,Y=%s,R=%s\n",circle2[0],circle2[1],circle2[2]);
+		
+		question.circleTest(circle1,circle2);
 		
 		//System.out.print("Please select a point in the form of x,y\n");
 		//System.out.print("Point C - X,Y Coord-> ");
@@ -51,20 +69,47 @@ public class Question6 {
 		System.out.println("");
 		System.out.println("Done");
 	}
-	public int circleTest (int[] circle1,int[] circle2)
+	public void circleTest (int[] circle1,int[] circle2)
 	{
-			double circleInteraction = Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2);  
+			//double circleInteraction = Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2); 
+			//double x = (circle1[0]-circle2[0]);
+			//double y = (circle1[1]-circle2[1]);
+			//double centerPointDistance = Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2); 
+			//Distance formula
+			//double centerPointDistance = Math.sqrt(Math.abs((circle1[0]-circle2[0]))^2 + Math.abs((circle1[1]-circle2[1]))^2);
+			double centerPointDistance = Math.abs(Math.sqrt(Math.pow(circle1[0]-circle2[0],2) + Math.pow(circle1[1]-circle2[1],2)));
+			//double combinedRadius = circle1[2]+circle2[2];
+			double combinedRadius = Math.abs(circle2[2]-circle1[2]);
+			
+			System.out.println("");
+			System.out.printf("Distance between points=%s\nCombined Radius=%s\n",centerPointDistance,combinedRadius);
+			
+			//Once circle completely contains another
+			if (circle1[0]==circle2[0] && circle1[1]==circle2[1] && circle1[2]!=circle2[2])//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
+			{
+				System.out.println("Once circle completely conatins another\n");
+				return;
+			}
 			//Circles touch each other
-			if (circle1[2]+circle2[2] == circleInteraction)//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
-				return 0;
+			if (combinedRadius == centerPointDistance)//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
+			{
+				System.out.println("Circles touch each other\n");
+				return;
+			}
 			//Circles Overlap
-			if (circle1[2]+circle2[2] > circleInteraction)//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
-				return 1;
+			if (combinedRadius > centerPointDistance)//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
+			{
+				System.out.println("Circles overlap\n");
+				return;
+			}
 			//Circles do not intersect
-			if (circle1[2]+circle2[2] < circleInteraction)//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
-				return 2;
-				
-			return -1;
+			if (combinedRadius < centerPointDistance)//Math.sqrt((circle1[0]-circle2[0])^2 + (circle1[1]-circle2[1])^2))
+			{
+				System.out.println("Circles do not intersect");
+				return;
+			}
+
+			
 	}
 	public double length (int[] pointA,int[] pointB)
 	{
